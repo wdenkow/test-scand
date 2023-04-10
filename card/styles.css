@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+body {
+  padding: 40px;
+}
+
+.card {
+  width: 280px;
+  text-align: right;
+  padding: 20px;
+  padding-top: 44px;
+  position: relative;
+  border-radius: 24px;
+}
+.card--green {
+  background: linear-gradient(to right top, #32d194, #43e698);
+  color: white;
+}
+.card--green .icon {
+  fill: white;
+}
+.card--green .icon-wrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.card--green .card__list-item:after {
+  content: url("../icons/checkmark.svg");
+}
+.card--white {
+  color: grey;
+  box-shadow: 0 0 4px grey;
+}
+.card--white .icon {
+  fill: #6aaff1;
+}
+.card--white .card__list-item:after {
+  content: url("../icons/circle.svg");
+}
+.card .icon {
+  width: 24px;
+  height: 24px;
+}
+.card .icon-wrapper {
+  position: absolute;
+  left: 20px;
+  top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+.card h1 {
+  font-weight: 500;
+}
+.card h2 {
+  margin-top: 10px;
+}
+.card__list {
+  margin-top: 8px;
+  height: 86px;
+}
+.card__list-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card__list-item::after {
+  margin-left: 6px;
+  display: block;
+}
+.card__desctiption {
+  margin-top: 20px;
+  font-size: 14px;
+}/*# sourceMappingURL=styles.css.map */
